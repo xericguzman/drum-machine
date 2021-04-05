@@ -8,7 +8,7 @@ We're given a ticking metronome that plays a sound every 600ms. In this assignme
 
 **Make at least one commit per part of this assignment.**
 
-If you get stuck on anything, check out [GUIDANCE.md](GUIDANCE.md).
+Check out [GUIDANCE.md](GUIDANCE.md) for more specifics on how to accomplish the following tasks.
 
 ## Part 1: Improving the metronome
 
