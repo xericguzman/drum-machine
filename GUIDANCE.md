@@ -54,7 +54,7 @@ This file contains guidance on how to accomplish this assignment. As always, the
   <input type="checkbox" id="kick-drum" value="kick-drum">
   <label for="kick-drum">Kick drum</label>
 
-  <input id="kick-drum-timing>
+  <input id="kick-drum-timing">
 </div>
 ```
 
