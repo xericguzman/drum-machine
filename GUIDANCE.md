@@ -26,7 +26,7 @@ This file contains guidance on how to accomplish this assignment. As always, the
 
 1. Now inside this `div`, create four checkboxes. Each checkbox should also have a parent container. This could look like the following:
 
-```
+```html
 <div>
   <input type="checkbox" id="kick-drum" value="kick-drum">
   <label for="kick-drum">Kick drum</label>
@@ -49,7 +49,7 @@ This file contains guidance on how to accomplish this assignment. As always, the
 
 * Wherever you add the checkboxes to the page, also add some text inputs to the page. This might look like the following:
 
-```
+```html
 <div>
   <input type="checkbox" id="kick-drum" value="kick-drum">
   <label for="kick-drum">Kick drum</label>
@@ -64,7 +64,8 @@ This file contains guidance on how to accomplish this assignment. As always, the
 
 * Compare this `.value` number to your global current metronome count variable. If both are equal, play the sound! Warning: `.value` may be a string. If you want to convert this to a number, use `Number(str)`. The following sample code may help.
 
-```
+```javascript
+
 // Total number of beats that have occured
 let count = 0;
 
