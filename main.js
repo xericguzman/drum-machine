@@ -1,28 +1,15 @@
-// The number of metronome ticks that have occured
-let numTicks = 0;
-
-// Setup 'tick' and 'tock' sounds
+// Setup 'tick' sound
 const tick = new Audio('sounds/tick.mp3');
-const tock = new Audio('sounds/tock.mp3');
 
+// This function is called every 600ms
 function update() {
 
-    // Increment numTicks
-    numTicks++;
-
-    // Every three ticks, play 'tock'
-    if (numTicks % 4 === 0) {
-        tock.play();
-    }
-    
-    // Else play 'tick'
-    else {
-        tick.play();
-    }
+    // Play the 'tick' sound
+    tick.play();
 }
 
+// This function sets up update() to be called every 600ms
 function setupUpdate() {
-    // Call update() every 600ms
     setInterval(update, 600);
 }
 
