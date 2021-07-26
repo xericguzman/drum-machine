@@ -60,7 +60,7 @@ If the input contains 3, that instrument will play on the third metronome count.
 
 ## Stretch goals
 
-* Customize the look of the page! Use Bootstrap and your CSS skills to make the page look nice. Consider switching out the metronome for a different animation.
+* Customize the look of the page! Use your CSS skills to make the page look nice. Consider switching out the metronome for a different animation.
 
 * Add more sounds! You can find loads of sounds at https://freesound.org/ (you'll need to make an account to download)
 
