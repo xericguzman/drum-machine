@@ -28,41 +28,41 @@ This file contains guidance on how to accomplish this assignment. As always, the
 
 ```html
 <div>
-  <input type="checkbox" id="kick-drum" value="kick-drum">
+  <input type="checkbox" id="kick-drum" value="kick-drum" />
   <label for="kick-drum">Kick drum</label>
 </div>
 ```
 
 ## 2B
 
-* In your JS, we'll need some additional code in `update()` that determines if the metronome checkbox is checked.
+- In your JS, we'll need some additional code in `update()` that determines if the metronome checkbox is checked.
 
-* Inside `update()`, use `document.querySelector` to select the 'metronome' checkbox element. Determine if it's check by looking at its `.checked` property. If it is checked, play either tick or tock (the code you wrote previously).
+- Inside `update()`, use `document.querySelector` to select the 'metronome' checkbox element. Determine if it's check by looking at its `.checked` property. If it is checked, play either tick or tock (the code you wrote previously).
 
 ## 2C
 
-* Load the other instrument `mp3` files above the `update()` function in the same way that `tick.mp3` was loaded.
-* Similar to the code in 2B, inside your update function, determine whether the other three checkboxes are checked.
-* If they are, play the associated instrument.
+- Load the other instrument `mp3` files above the `update()` function in the same way that `tick.mp3` was loaded.
+- Similar to the code in 2B, inside your update function, determine whether the other three checkboxes are checked.
+- If they are, play the associated instrument.
 
 ## 3A
 
-* Wherever you add the checkboxes to the page, also add some text inputs to the page. This might look like the following:
+- Wherever you add the checkboxes to the page, also add some text inputs to the page. This might look like the following:
 
 ```html
 <div>
-  <input type="checkbox" id="kick-drum" value="kick-drum">
+  <input type="checkbox" id="kick-drum" value="kick-drum" />
   <label for="kick-drum">Kick drum</label>
 
-  <input id="kick-drum-timing">
+  <input id="kick-drum-timing" />
 </div>
 ```
 
 ## 3B
 
-* In your JS, right after determining if an instrument's checkbox was checked (inside that if statement), determine what the value of the associated timing input is. You can do this by first selecting that input element with `document.querySelector`, then by looking at its `.value` property.
+- In your JS, right after determining if an instrument's checkbox was checked (inside that if statement), determine what the value of the associated timing input is. You can do this by first selecting that input element with `document.querySelector`, then by looking at its `.value` property.
 
-* Compare this `.value` number to your global current metronome count variable. If both are equal, play the sound! Warning: `.value` may be a string. If you want to convert this to a number, use `Number(str)`. The following sample code may help.
+- Compare this `.value` number to your global current metronome count variable. If both are equal, play the sound! Warning: `.value` may be a string. If you want to convert this to a number, use `Number(str)`. The following sample code may help.
 
 ```javascript
 
@@ -85,7 +85,7 @@ function update() {
 
         // Get the kickdrum timing input
         const timingInput = document.querySelector( ... );
-        
+
         // If the timing input count equals the metronome count...
         if (Number(timingInput.value) === metronomeCount) {
 
